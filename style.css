@@ -1,0 +1,234 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #9DAAF2;
+}
+
+/* Navbar */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A2238;
+    color: #eaeaea;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: aqua;
+    transform: rotate(2deg);
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+
+}
+
+a {
+    color:#eaeaea;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    color: aqua;
+    transform: rotate(2deg);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: #FF6A3D;
+    color: #eaeaea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Navbar end */
+
+/* Content */
+
+.container-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: #eaeaea;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Content end */
+
+/* palaralx */
+.paralax {
+    background-image: url('assets/images/gambar3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #eaeaea;
+    background-color: #1A2238;
+    padding: 40px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.container-paralax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    /* height: 100vh; */
+}
+
+.card-item {
+    width: 25%;
+    color: black;
+    background: #f7f7f7;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+} 
+
+.card-title {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+
+/* Paralax end */
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1A2238;
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    .container-footer {
+        padding: 0;
+    }
+
+    .img-foto {
+       padding: 0;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        background-color: #1A2238;
+        z-index: 9;
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 70px;
+    }
+}
